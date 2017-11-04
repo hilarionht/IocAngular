@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ioc_AngularSPA.Core", "Ioc_AngularSPA.Core\Ioc_AngularSPA.Core.csproj", "{1E7B2104-E266-465A-9DDF-9398F6CB4EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ioc_AngularSPA.Data", "Ioc_AngularSPA.Data\Ioc_AngularSPA.Data.csproj", "{D9BFBE8F-8A1D-4440-9B78-4EF45BAA13AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ioc_AngularSPA.Service", "Ioc_AngularSPA.Service\Ioc_AngularSPA.Service.csproj", "{81471272-A9B0-4F14-8C84-0E801F672811}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ioc_AngularSPA.Web", "Ioc_AngularSPA.Web\Ioc_AngularSPA.Web.csproj", "{07F3A92E-C720-44BC-8415-D1BCE2F25BB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ioc_AngularSPA.Repo", "Ioc_AngularSPA.Repository\Ioc_AngularSPA.Repo.csproj", "{C0A7F102-11A1-49B3-95C0-81CBEFAA5B7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ioc_AngularSPA.Api", "Ioc_AngularSPA.Api\Ioc_AngularSPA.Api.csproj", "{B07B8506-6E3D-4F0C-9068-FDC9A3D8E95E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E7B2104-E266-465A-9DDF-9398F6CB4EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7B2104-E266-465A-9DDF-9398F6CB4EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7B2104-E266-465A-9DDF-9398F6CB4EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7B2104-E266-465A-9DDF-9398F6CB4EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9BFBE8F-8A1D-4440-9B78-4EF45BAA13AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9BFBE8F-8A1D-4440-9B78-4EF45BAA13AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9BFBE8F-8A1D-4440-9B78-4EF45BAA13AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9BFBE8F-8A1D-4440-9B78-4EF45BAA13AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81471272-A9B0-4F14-8C84-0E801F672811}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81471272-A9B0-4F14-8C84-0E801F672811}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81471272-A9B0-4F14-8C84-0E801F672811}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81471272-A9B0-4F14-8C84-0E801F672811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07F3A92E-C720-44BC-8415-D1BCE2F25BB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07F3A92E-C720-44BC-8415-D1BCE2F25BB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07F3A92E-C720-44BC-8415-D1BCE2F25BB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07F3A92E-C720-44BC-8415-D1BCE2F25BB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0A7F102-11A1-49B3-95C0-81CBEFAA5B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0A7F102-11A1-49B3-95C0-81CBEFAA5B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0A7F102-11A1-49B3-95C0-81CBEFAA5B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0A7F102-11A1-49B3-95C0-81CBEFAA5B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07B8506-6E3D-4F0C-9068-FDC9A3D8E95E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07B8506-6E3D-4F0C-9068-FDC9A3D8E95E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07B8506-6E3D-4F0C-9068-FDC9A3D8E95E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07B8506-6E3D-4F0C-9068-FDC9A3D8E95E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B572B7BB-DEB7-41F1-B0A6-26F9F3E51EC8}
+	EndGlobalSection
+EndGlobal

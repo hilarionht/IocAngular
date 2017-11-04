@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9BFBE8F-8A1D-4440-9B78-4EF45BAA13AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ioc_AngularSPA.Data</RootNamespace>
+    <AssemblyName>Ioc_AngularSPA.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IDbContext.cs" />
+    <Compile Include="IocDbContext.cs" />
+    <Compile Include="Mapping\AportacionMap.cs" />
+    <Compile Include="Mapping\AportacionImpresionMap.cs" />
+    <Compile Include="Mapping\CancelacionContratoImpresionMap.cs" />
+    <Compile Include="Mapping\AportacionArchivoMap.cs" />
+    <Compile Include="Mapping\ConciliacionArchivoMap.cs" />
+    <Compile Include="Mapping\ConciliacionImpresionMap.cs" />
+    <Compile Include="Mapping\PrestamoImpresionMap.cs" />
+    <Compile Include="Mapping\SolicitudRecursoImpresionMap.cs" />
+    <Compile Include="Mapping\DevolucionRecursoImpresionMap.cs" />
+    <Compile Include="Mapping\GastoAdministracionArchivoMap.cs" />
+    <Compile Include="Mapping\DevolucionRecursoArchivoMap.cs" />
+    <Compile Include="Mapping\SolicitudRecursoArchivoMap.cs" />
+    <Compile Include="Mapping\PrestamoArchivoMap.cs" />
+    <Compile Include="Mapping\CancelacionContratoMap.cs" />
+    <Compile Include="Mapping\CancelacionContratoDetalleMap.cs" />
+    <Compile Include="Mapping\AportacionDetalleMap.cs" />
+    <Compile Include="Mapping\ConciliacionDetalleMap.cs" />
+    <Compile Include="Mapping\ConciliacionMap.cs" />
+    <Compile Include="Mapping\SolicitudRecursoDetalleMap.cs" />
+    <Compile Include="Mapping\SolicitudRecursoMap.cs" />
+    <Compile Include="Mapping\GastoAdministracionMap.cs" />
+    <Compile Include="Mapping\GastoAdministracionDetalleMap.cs" />
+    <Compile Include="Mapping\DevolucionRecursoDetalleMap.cs" />
+    <Compile Include="Mapping\PrestamoDetalleMap.cs" />
+    <Compile Include="Mapping\PrestamoMap.cs" />
+    <Compile Include="Mapping\DevolucionRecursoMap.cs" />
+    <Compile Include="Mapping\GastoLegalPromocionalMap.cs" />
+    <Compile Include="Mapping\CancelacionMap.cs" />
+    <Compile Include="Mapping\CancelacionDetalleMap.cs" />
+    <Compile Include="Mapping\CancelacionArchivoMap.cs" />
+    <Compile Include="Mapping\CancelacionImpresionMap.cs" />
+    <Compile Include="Mapping\EstatusMovimientoMap.cs" />
+    <Compile Include="Mapping\TipoMovimientoMap.cs" />
+    <Compile Include="Mapping\UserMap.cs" />
+    <Compile Include="Mapping\UserProfileMap.cs" />
+    <Compile Include="Migrations\201711020040518_Initial.cs" />
+    <Compile Include="Migrations\201711020040518_Initial.Designer.cs">
+      <DependentUpon>201711020040518_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711020044101_Initial2.cs" />
+    <Compile Include="Migrations\201711020044101_Initial2.Designer.cs">
+      <DependentUpon>201711020044101_Initial2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ioc_AngularSPA.Core\Ioc_AngularSPA.Core.csproj">
+      <Project>{1e7b2104-e266-465a-9ddf-9398f6cb4edc}</Project>
+      <Name>Ioc_AngularSPA.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201711020040518_Initial.resx">
+      <DependentUpon>201711020040518_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711020044101_Initial2.resx">
+      <DependentUpon>201711020044101_Initial2.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

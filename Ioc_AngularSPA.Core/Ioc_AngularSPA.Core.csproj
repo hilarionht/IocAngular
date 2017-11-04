@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E7B2104-E266-465A-9DDF-9398F6CB4EDC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ioc_AngularSPA.Core</RootNamespace>
+    <AssemblyName>Ioc_AngularSPA.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseEntity.cs" />
+    <Compile Include="Data\Aportacion.cs" />
+    <Compile Include="Data\AportacionDetalle.cs" />
+    <Compile Include="Data\CancelacionContratoArchivo.cs" />
+    <Compile Include="Data\CancelacionContratoImpresion.cs" />
+    <Compile Include="Data\GastoLegalPromocionalImpresion.cs" />
+    <Compile Include="Data\SolicitudRecursoImpresion.cs" />
+    <Compile Include="Data\PrestamoImpresion.cs" />
+    <Compile Include="Data\GastoAdministracionImpresion.cs" />
+    <Compile Include="Data\DevolucionRecursoImpresion.cs" />
+    <Compile Include="Data\ConciliacionImpresion.cs" />
+    <Compile Include="Data\AportacionImpresion.cs" />
+    <Compile Include="FileBase.cs" />
+    <Compile Include="Data\CancelacionArchivo.cs" />
+    <Compile Include="Data\CancelacionContrato.cs" />
+    <Compile Include="Data\CancelacionContratoDetalle.cs" />
+    <Compile Include="Data\Conciliacion.cs" />
+    <Compile Include="Data\ConciliacionArchivo.cs" />
+    <Compile Include="Data\ConciliacionDetalle.cs" />
+    <Compile Include="Data\DevolucionRecurso.cs" />
+    <Compile Include="Data\AportacionArchivo.cs" />
+    <Compile Include="Data\DevolucionRecursoArchivo.cs" />
+    <Compile Include="Data\GastoAdministracionArchivo.cs" />
+    <Compile Include="Data\GastoLegalPromocionalArchivo.cs" />
+    <Compile Include="Data\PrestamoArchivo.cs" />
+    <Compile Include="Data\SolicitudRecursoArchivo.cs" />
+    <Compile Include="Data\SolicitudRecursoDetalle.cs" />
+    <Compile Include="Data\DevoluvionRecursoDetalle.cs" />
+    <Compile Include="Data\EstatusMovimiento.cs" />
+    <Compile Include="Data\GastoAdministracionDetalle.cs" />
+    <Compile Include="Data\Prestamo.cs" />
+    <Compile Include="Data\Cancelacion.cs" />
+    <Compile Include="Data\CancelacionDetalle.cs" />
+    <Compile Include="Data\GastoAdministracion.cs" />
+    <Compile Include="Data\GastoLegalPromocional.cs" />
+    <Compile Include="Data\CancelacionImpresion.cs" />
+    <Compile Include="Data\PrestamoDetalle.cs" />
+    <Compile Include="Data\SolicitudRecurso.cs" />
+    <Compile Include="Data\TipoMovimiento.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\UserProfile.cs" />
+    <Compile Include="FidBase.cs" />
+    <Compile Include="FidDetBase.cs" />
+    <Compile Include="PrintBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
